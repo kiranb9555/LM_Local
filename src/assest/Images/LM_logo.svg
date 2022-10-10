@@ -1,0 +1,15 @@
+<svg width="96" height="53" viewBox="0 0 96 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_2768_9249" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="94" height="53">
+<rect y="13.1858" width="11.5363" height="39.2592" rx="5.76817" fill="white"/>
+<rect y="52.4445" width="11.5555" height="39.194" rx="5.77776" transform="rotate(-90 0 52.4445)" fill="white"/>
+<rect width="11.5364" height="39.2592" rx="5.76818" transform="matrix(-0.999988 0.00488663 -0.00487042 -0.999988 55.3574 52.3698)" fill="white"/>
+<rect width="11.5459" height="30.2333" rx="5.77297" transform="matrix(0.706519 -0.707694 0.706519 0.707694 41.3389 18.9113)" fill="white"/>
+<rect width="11.5459" height="30.2333" rx="5.77297" transform="matrix(-0.706519 -0.707694 0.706519 -0.707694 74.6396 40.8271)" fill="white"/>
+<rect width="11.5364" height="39.2592" rx="5.76818" transform="matrix(-0.999988 0.00488663 -0.00487042 -0.999988 93.709 52.295)" fill="white"/>
+<ellipse cx="49.5469" cy="5.92591" rx="5.91608" ry="5.92591" fill="white"/>
+<ellipse cx="88.001" cy="5.92591" rx="5.91608" ry="5.92591" fill="white"/>
+</mask>
+<g mask="url(#mask0_2768_9249)">
+<rect y="-43.7041" width="144.222" height="144.222" fill="white"/>
+</g>
+</svg>
