@@ -1,4 +1,4 @@
-import {useNavigation} from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import {
   View,
@@ -8,48 +8,43 @@ import {
   ImageBackground,
   TouchableOpacity,
 } from 'react-native';
-import {Images} from '../../assest/images';
+import { Images } from '../../assest/images';
 import Preloginflow1Styles from './styles';
 
-const {container, Preloginflow1fistyle, Preloginflow1btn, text} =
+const { container, Preloginflow1fistyle, Preloginflow1btn, text } =
   Preloginflow1Styles;
-const {Preloginflow1_firstIcon, Preloginflow1_secondtIcon,Close} = Images;
+const {
+  PreLogin1,
+  Preloginflow1_secondtIcon,
+  Close,
+} = Images;
 
 const Preloginflow1 = () => {
   const navigation = useNavigation();
   return (
     <View
       style={{
-        backgroundColor: '#fFF',
+        backgroundColor: '#DBF5FC',
         flex: 1,
-        
+
       }}>
-      <View style={{padding: '2%'}}>
-        <TouchableOpacity style={{flexDirection:'row'}}>
-          <Image source={Close} />  
-          <Text style={{fontSize: 16, color: '#5FC2DA', marginLeft:'2%'}}>SKIP ONBOARDING</Text>
+      <View style={{ padding: '2%' }}>
+        <TouchableOpacity style={{ flexDirection: 'row' }}>
+          <Image source={Close} style={{ width: 18, height: 18 }} />
+          <Text style={{ fontSize: 12, color: '#5FC2DA', marginLeft: '2%', fontWeight: '600' }}>SKIP ONBOARDING</Text>
         </TouchableOpacity>
       </View>
       <ImageBackground
-        source={Preloginflow1_firstIcon}
+        source={PreLogin1}
         style={{
-          // width: '100%',
+          width: '100%',
           height: 160,
-          justifyContent: 'center',
-          alignItems: 'center',
-          marginTop: '5%',
+          alignSelf:'center',
+          backgroundColor:'#DFFFF',
+          // justifyContent: 'center',
+          // alignItems: 'center',
+          marginTop: '20%',
         }}>
-        <Text
-          style={{
-            fontSize: 36,
-            fontFamily:'Archivo',
-            fontWeight: 'bold',
-            color: '#fff',
-            textAlign: 'center',
-             marginHorizontal: '15%',
-          }}>
-          Add your lands with just a click
-        </Text>
       </ImageBackground>
       <View
         style={{
@@ -61,34 +56,35 @@ const Preloginflow1 = () => {
       </View>
       <View
         style={{
+          width: '100%',
           position: 'absolute',
-        
+          alignSelf: 'center',
+          justifyContent: 'center',
           bottom: 10,
           flexDirection: 'row',
           alignItems: 'center',
-          paddingHorizontal: '25%',
+          // paddingHorizontal: '25%',
         }}>
         <TouchableOpacity
           style={{
             backgroundColor: '#5FC2DA',
-            width: 150,
-            height: 30,
-            borderRadius:10,
-            marginHorizontal: '13%',
+            width: '40%',
+            padding: '2%',
+            borderRadius: 10,
+            alignSelf: 'center',
           }}
           onPress={() => navigation.navigate('Preloginflow2')}>
           <Text
             style={{
               fontSize: 16,
               fontWeight: '600',
-              
               color: '#fff',
               textAlign: 'center',
             }}>
-            Next 
+            Next
           </Text>
         </TouchableOpacity>
-        <Text style={{fontSize: 16, fontWeight: '600', color: '#00BDEB'}}>
+        <Text style={{ fontSize: 16, fontWeight: '600', color: '#00BDEB', textAlign: 'center', alignSelf: 'center', marginLeft: '5%' }}>
           1/3
         </Text>
       </View>

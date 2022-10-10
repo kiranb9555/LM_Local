@@ -1,39 +1,104 @@
 import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import {View, Text, Image, Button, ImageBackground, TouchableOpacity} from 'react-native';
-import {Images} from '../../assest/images';
-// import Preloginflow2Styles from './styles';
+import {
+  View,
+  Text,
+  Image,
+  Button,
+  ImageBackground,
+  TouchableOpacity,
+} from 'react-native';
+import { Images } from '../../assest/images';
+// import Preloginflow1Styles from './styles';
 
-// const {container, Preloginflow1fistyle, Preloginflow1btn, text} =
-//   Preloginflow2Styles;
-const {Preloginflow1_firstIcon, Preloginflow1_secondtIcon} = Images;
+// const { container, Preloginflow1fistyle, Preloginflow1btn, text } =
+//   Preloginflow1Styles;
+const {
+  PreLogin2,
+  Prelogin2main,
+  Close
+} = Images;
 
 const Preloginflow2 = () => {
-
-    const navigation =useNavigation();
+  const navigation = useNavigation();
   return (
-    <View  style={{
-        backgroundColor: '#857AFF',
+    <View
+      style={{
+        backgroundColor: '#DBF5FC',
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
+
       }}>
-      <View style={{padding:'2%'}}>
-        <TouchableOpacity>
-        <Text style={{fontSize:16, color:'blue'}}>SKIP ONBOARDING</Text>
+      <View style={{ padding: '2%' }}>
+        <TouchableOpacity style={{ flexDirection: 'row' }}>
+          <Image source={Close} style={{ width: 18, height: 18 }} />
+          <Text style={{ fontSize: 12, color: '#5FC2DA', marginLeft: '2%', fontWeight: '600' }}>SKIP ONBOARDING</Text>
         </TouchableOpacity>
       </View>
-      <ImageBackground source={Preloginflow1_firstIcon} style={{width:'100%', height:160, justifyContent:'center',alignItems:'center',marginTop:'5%'}}>
-        <Text style={{fontSize:36, fontWeight:'bold', color:'#fff', textAlign:'center', marginHorizontal:'15%'}}>Add your lands with just a click</Text>
+      <ImageBackground
+        source={PreLogin2}
+        style={{
+          width: '100%',
+          height: 160,
+          // justifyContent: 'center',
+          // alignItems: 'center',
+          marginTop: '20%',
+          // paddingVertical: '5%'
+        }}>
       </ImageBackground>
-      <View style={{justifyContent:'center',alignItems:'center', marginTop:'5%'}}>
-        <Image source={Preloginflow1_secondtIcon}/>
+      <View
+        style={{
+          justifyContent: 'center',
+          alignItems: 'center',
+          marginTop: '5%',
+        }}>
+        <Image source={Prelogin2main} style={{ marginTop: '10%' }} />
       </View>
-      <View style={{position:'absolute', bottom:10, flexDirection:'row', alignItems:'center', paddingHorizontal:'25%'}}>
-        <TouchableOpacity style={{backgroundColor:'blue',width:150, height:30, borderRadius:10, marginHorizontal:'5%'}} onPress={()=>navigation.navigate('Preloginflow3')}>
-        <Text style={{fontSize:16, fontWeight:'600', color:'#fff', textAlign:'center'}}>Next Button</Text>
+      <View
+        style={{
+          width: '100%',
+          position: 'absolute',
+          alignSelf: 'center',
+          justifyContent: 'center',
+          bottom: 10,
+          flexDirection: 'row',
+          alignItems: 'center',
+          // paddingHorizontal: '25%',
+        }}>
+        <TouchableOpacity
+        onPress={() => navigation.navigate('Preloginflow1')}>
+          <Text style={{
+            fontSize: 16,
+            fontWeight: '600',
+            color: '#5FC2DA',
+            textAlign: 'center',
+            textDecorationLine: 'underline',
+            marginRight: '10%'
+          }}>
+            BACK
+          </Text>
         </TouchableOpacity>
-        <Text style={{fontSize:16, fontWeight:'600',color:'blue'}}>1/3</Text>
+        <TouchableOpacity
+          style={{
+            backgroundColor: '#5FC2DA',
+            width: '40%',
+            padding: '2%',
+            borderRadius: 10,
+            alignSelf: 'center',
+          }}
+          onPress={() => navigation.navigate('Preloginflow3')}>
+          <Text
+            style={{
+              fontSize: 16,
+              fontWeight: '600',
+              color: '#fff',
+              textAlign: 'center',
+            }}>
+            Next
+          </Text>
+        </TouchableOpacity>
+        <Text style={{ fontSize: 16, fontWeight: '600', color: '#00BDEB', textAlign: 'center', alignSelf: 'center', marginLeft: '5%' }}>
+          2/3
+        </Text>
       </View>
     </View>
   );
