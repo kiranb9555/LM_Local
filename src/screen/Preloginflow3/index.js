@@ -85,7 +85,7 @@ const Preloginflow3 = () => {
             borderRadius: 10,
             alignSelf: 'center',
           }}
-          // onPress={() => navigation.navigate('Preloginflow3')}
+          onPress={() => navigation.navigate('BottomTabNavigator')}
           >
           <Text
             style={{
