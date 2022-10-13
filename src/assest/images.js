@@ -16,6 +16,9 @@ import ActivityHistory from './Images/ActivityHistory.png';
 import ActivityHistory1 from './Images/ActivityHistory1.png';
 import Customer from './Images/Customer.png';
 import Customer1 from './Images/Customer1.png';
+import Profile from './Images/Profile.png';
+import BackGround_Icon from './Images/BackGround_Icon.png';
+import TextContent from './Images/TextContent.png';
 
 export const Images =  {
 
@@ -37,4 +40,7 @@ export const Images =  {
     ActivityHistory1,
     Customer,
     Customer1,
+    Profile,
+    BackGround_Icon,
+    TextContent,
 }
