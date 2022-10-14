@@ -19,6 +19,13 @@ import Customer1 from './Images/Customer1.png';
 import Profile from './Images/Profile.png';
 import BackGround_Icon from './Images/BackGround_Icon.png';
 import TextContent from './Images/TextContent.png';
+import ServicesLabel from './Images/ServicesLabel.png';
+import MonthlyUpdates from './Images/MonthlyUpdates.png';
+import LegalServices from './Images/LegalServices.png';
+import PlotTracing from './Images/PlotTracing.png';
+import Planting from './Images/Planting.png';
+import Documents from './Images/Documents.png';
+
 
 export const Images =  {
 
@@ -43,4 +50,10 @@ export const Images =  {
     Profile,
     BackGround_Icon,
     TextContent,
+    ServicesLabel,
+    MonthlyUpdates,
+    LegalServices,
+    PlotTracing,
+    Planting,
+    Documents,
 }
